@@ -1,26 +1,67 @@
 :root {
-    --branco-principal: #FFFFFF;
-    --cinza-secundario: #C0C0C0C0;
-    --botao-azul: #167BF7;
-    --cor-de-fundo: #00030C;
+  --branco-principal: #ffffff;
+  --cinza-secundario: #c0c0c0c0;
+  --botao-azul: #167bf7;
+  --cor-de-fundo: #00030c;
+  --fonte-principal: "Inter";
 }
 
 body {
-    background-color: var(--cor-de-fundo);
-    color: var(--branco-principal);
+  background-color: var(--cor-de-fundo);
+  color: var(--branco-principal);
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  font-weight: 400;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .principal {
-    background-image: url(img/Background.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+  background-image: url(img/Background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .container {
-    height: 100vh;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+/* Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um preço único. */
+.container_titulo {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container__imagens {
+    margin: 1em 0 2em 0;
+}
+
+/* Assine por 12x de R$ 120,00* */
+.container_botao {
+  background-color: var(--botao-azul);
+  border-radius: 8px;
+  padding: 1em;
+  color: var(--branco-principal);
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+/* Assinar somente o Alura+ */
+.botao_secundario {
+  background-color: transparent;
+  border: 2px solid var(--branco-principal);
+}
+
+/* *O preço pode variar caso a assinatura seja feita em outros planos. */
+.container_aviso {
+  font-size: 12px;
+  color: var(--cinza-secundario);
 }
